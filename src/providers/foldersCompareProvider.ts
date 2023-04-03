@@ -273,6 +273,10 @@ export class CompareFoldersProvider implements TreeDataProvider<File> {
 
     return children;
   }
+
+  dismiss = (e: TreeItem, a: any) => {
+    console.log(222, e);
+  }
 }
 
 const openFolderChild = (isSingle: boolean) =>

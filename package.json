@@ -239,6 +239,11 @@
           "command": "foldersCompare.takeComparedFile",
           "when": "view == foldersCompareAppService",
           "group": "1_folderCompares_actions@2"
+        },
+        {
+          "command": "foldersCompare.dismiss",
+          "group": "inline",
+          "when": "viewItem ~= file"
         }
       ]
     },
@@ -302,6 +307,11 @@
           "light": "resources/light/swap.svg",
           "dark": "resources/dark/swap.svg"
         }
+      },
+      {
+        "title": "Dismiss",
+        "command": "foldersCompare.dismiss",
+        "icon": "$(close)"
       },
       {
         "command": "foldersCompare.compareSelectedFolders",

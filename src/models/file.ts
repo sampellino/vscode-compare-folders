@@ -37,7 +37,5 @@ export class File extends TreeItem {
 		dark: join(__filename, '..', '..', '..', 'resources', 'dark', `${this.type}.svg`),
 	} : undefined;
 
-
-
 	contextValue = this.type;
 }
